@@ -189,6 +189,7 @@ p {
     cursor: pointer;
     transition: 0.2s ease;
     border-radius:  50px;
+    font-size: 12px;
     margin-bottom: 0;
 }
 
@@ -3114,6 +3115,13 @@ textarea {
 
 }
 
+.radio {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.75rem;
+    color: red;
+}
 
 input[type="radio"] {
    accent-color: #ccdf6c;
@@ -3156,8 +3164,82 @@ button:hover {
     background-color:#b0d500;
 }
 
-footer {
+.footer-logo {
+    max-width: 150px;
+    height: auto;
+    margin: 2rem;
+}
+
+.footer-logo img {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    object-fit: contain;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    gap: 60px;
+    text-align: left;
+}
+
+.site-footer {
     background-color: #deeba2;
     text-align: center;
-    padding: 2px;
+    padding: 40px 20px;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.site-footer h4 {
+    margin-bottom: 10px;
+    font-size: 1rem;
+
+}
+
+.site-footer ul {
+    margin: 5px 0;
+    list-style: none;
+
+}
+
+.site-footer li {
+    margin: 5px 0;
+}
+
+.site-footer a {
+    color: #333;
+    text-decoration: none;
+}
+
+.site-footer a:hover {
+    text-decoration: underline;
+}
+
+.footer-note {
+    font-size: 0.8rem;
+    color: #333;
+
+}
+
+.footer-hg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 60px;
+    margin-bottom: 20px;
 }

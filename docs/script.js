@@ -11,6 +11,11 @@ if (scrollY > heroHeight - 50) {
 
 });
 
+function toggleMenu() {
+    const nav = document.getElementById("myTopnav");
+    nav.classList.toggle("responsive");
+}
+
 
 function myFunction() {
     var x = document.getElementById("myTopnav");

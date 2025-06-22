@@ -6,10 +6,10 @@
 .topnav {
     display:flex; 
     align-items: center;
-    justify-content:flex-start;
-    padding: 1rem;
+    justify-content: space-between;
+    margin-left: 2rem;
+    padding: 2rem 2rem;
     font-size: 16px;
-    gap: 30px;
     position: sticky;
     top: 0;
     z-index: 999;
@@ -17,8 +17,6 @@
     font-family: Arial, Helvetica, sans-serif;
     background-color: transparent;
     transition: background-color 0.5s ease;
-    list-style: none;
-    padding-left: 2rem;
     color:#8e8e8e;
     
 }
@@ -42,17 +40,17 @@ a {
     
 }
 
-.icon {
-    display: none;
-}
+
+
 .icon img {
     cursor: pointer;
     height: auto;
     width: 70px;
 }
 
+
 .topnav.scrolled {
-    background-color: #fefff8;
+    background-color:#e7eec6;
 
 }
 .topnav a:hover {
@@ -64,58 +62,75 @@ color: black;
 color:#f8b25d;
 }
 
-@media screen and (min-width: 601px) {
-    .icon {
-        display: none;
-    }
+#navLinks {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    background: none;
+    width: 100%;
+    padding: 1rem 2rem;
+    text-align: right;
+    align-items: flex-end;
+    list-style: none;
+    background-color: #fefff8;
+}
+
+.topnav.responsive #navLinks {
+    display: flex;
+}
+
+.topnav.scrolled {
+    background-color:#e7eec6;
+}
+
+.topnav a:hover {
+    color: #ff991f;
+
+}
+
+.topnav a.active {
+    color: #f8b25d;
 }
 
 
-    .topnav.responsive {
-        position: relative;
-    }
+/*----------Responsive Styles 768px and up----------------*/
 
-    .topnav.responsive a.icon {
-        position: absolute;
-        right: 0;
-        top: 0;
+@media screen and (min-width: 768px) {
+
+    .icon {
+        display: none !important;
     }
-    .topnav.responsive a {
-        float: none;
-        display: block;
+}
+    #navLinks {
+        display: flex;
+        flex-direction: row;
+        position: static;
+        background: none;
+        width: auto;
+        gap: 1.5rem;
+        padding: 0;
+        align-items: center;
         text-align: left;
     }
 
-    /*Mobile*/
-    #navLinks {
-        display: flex;
-        gap: 40px;
-        list-style: none;
-    }
-
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 768px) {
         #navLinks {
             display: none;
-            flex-direction: column;
-            position: absolute;
+            font-size: 12px;
+            
+        }
 
-            .topnav.responsive #navlinks {
-                display: flex;
-            }
+        .topnav {
+            flex-direction: row;
+        }
 
-            .icon {
-                display: flex;
-            }
-
-            .topnav {
-                flex-wrap: wrap;
-            }
+           
             
         }
     
        
 
-}
+
 body {
     transition: background-color 1s ease;
     background-color: white;
@@ -659,6 +674,35 @@ p {
 
 .heather-social-icons a:hover img {
     transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .heather-section {
+        flex-direction: column;
+        height: auto;
+        padding: 2rem 1rem;
+    }
+
+    .heather-left {
+        width: 100%;
+        height: auto;
+        max-width: 400px;
+    }
+
+    .heather-img {
+        height: auto;
+        border-radius: 20px;
+    }
+
+    .heather-right {
+        max-width: 100%;
+        padding-top: 1rem;
+        text-align: center;
+    }
+
+    .heather-social-icons {
+        justify-content: center;
+    }
 }
 
 /*home portfolio section*/

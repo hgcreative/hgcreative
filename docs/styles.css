@@ -541,7 +541,7 @@ p {
     justify-content: center;
     align-content: center;
     gap: 40px;
-    margin: 1rem;
+    
     height: 60dvh;
     background:#fcfef4;
     
@@ -553,6 +553,16 @@ p {
     align-content: center;
     color: #f8b25d;
     font-size: 2rem;
+}
+
+.cta-home p {
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    color:#555;
+    font-size: 1rem;
+    margin-top: -1rem;
+
 }
 
 

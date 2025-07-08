@@ -411,17 +411,23 @@ p {
 .about-button {
     display: flex;
     margin-left: 1rem;
+    
 }
 .about-btn {
-    width: 120px;
+    width: 150px;
     height: 50px;
+    align-items: center;
     text-align: center;
+    justify-content: center;
     background-color:#e80093;
     text-align: center;
     color: white;
+    overflow: hidden;
     border-radius:  50px;
+    border: none;
     cursor: pointer;
     font-size: 12px;
+    margin-bottom: 0;
 
 }
 
@@ -721,15 +727,21 @@ display: flex;
 
 .about-btn {
     display: flex;
-    width: 150px;
 
 }
 .heatherabout-btn {
     width: 150px;
-    background-color:#bbd633;
+    height: 40px;
+    background-color:#f8b25d;
+    border-radius: 20px;
+    border: none;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
   
+}
+
+.heatherabout-btn:hover {
+    background-color: #c1e029;
 }
 
 

@@ -1,13 +1,10 @@
 window.addEventListener('scroll', () => {
+    console.log("scrolling");
 const scrollY = window.scrollY;
-const heroHeight= document.querySelector('.hero-section').offsetHeight;
+const heroImage = document.querySelector('.heroimage');
 
-if (scrollY > heroHeight - 50) {
-    document.body.classList.add('scrolled');
-} else {
-    document.body.classList.remove('scrolled');
-
-}
+const speed = 0.3;
+heroImage.style.transform = `translateY(${-scrollY * speed}px)`;
 
 });
 

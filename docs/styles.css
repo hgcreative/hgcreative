@@ -1211,6 +1211,7 @@ body {
     
 }
 
+
 .hgdesign-number {
     margin-top: 0.5rem;
     padding: 1rem;
@@ -1614,6 +1615,7 @@ p {
     align-content: center;
     text-align: center;
     margin-bottom: 25px;
+    background-color: #fff9f0;
 }
 
 .work-cta h2 {

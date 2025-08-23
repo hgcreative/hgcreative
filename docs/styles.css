@@ -3474,12 +3474,16 @@ margin: 2rem;
         min-width: 200px;
         margin-bottom: 1.5rem;
         align-content: center;
+        
     }
 }
 
 .contact-stats-header {
     color:#c1e029;
     font-size: 2rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 
 .contact-wrapper {

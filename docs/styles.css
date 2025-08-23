@@ -340,9 +340,9 @@ body {
     margin-left: 2rem;
     font-family: Arial, Helvetica, sans-serif;
     line-height: normal;
-    font-size: 2rem;
-    color: #e80093;
-    margin-bottom: 0;
+    font-size: 2.5rem;
+    color: #b0d500;
+    margin-bottom: 1rem;
 
 }
 
@@ -384,7 +384,7 @@ body {
     align-items: center;
     text-align: center;
     justify-content: center;
-    background-color:#e80093;
+    background-color:#ff991f;
     text-align: center;
     color: white;
     overflow: hidden;
@@ -752,6 +752,41 @@ body {
 }
 
 
+/*******************Blog Home Page********************/
+
+.blog-section {
+    display: flex;
+    height: 50dvh;
+   
+}
+
+.blog-header {
+    display: flex;
+    overflow: hidden;
+}
+
+.blog-header h1 {
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    font-size: 2rem;
+    color: white;
+}
+
+.blog-header p {
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    font-size: 1rem;
+    color: white;
+}
+
+.blogimage img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+}
 
 /*home portfolio section*/
 
@@ -843,7 +878,7 @@ body {
 .homepage-stats-title {
     font-size: 1rem;
     margin: 2rem;
-    color:#f86ac4;
+    color:#b0d500;
     text-align: center;
     margin-bottom: -1rem;
     font-weight: bold;
@@ -1226,7 +1261,7 @@ body {
 .hgdesign-number {
     margin-top: 0.5rem;
     padding: 1rem;
-    background-color:#f9f3f7;
+    background-color:#f2f3ea;
     align-items: center;
     justify-items: center;
     align-content: center;
@@ -1275,16 +1310,16 @@ body {
 
 
 .big-number {
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: 900;
-    color:#e80093;
+    color:#b0d500;
     
 }
 
 .stat-subtext {
     font-size: 1rem;
     font-weight:lighter;
-    color:#e80093;
+    color:#3c3c3b;
     max-width: 300px;
    
 }
@@ -1356,7 +1391,6 @@ body {
 
 .about-parallax h2 {
     position: relative;
-   
     color: white;
     text-align: center;
     

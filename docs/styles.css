@@ -757,36 +757,159 @@ body {
 .blog-section {
     display: flex;
     height: 50dvh;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
    
 }
 
-.blog-header {
+.blog-overlay {
+    background: 
+        linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+        url("Images/Ginger/Ginger Packaging.jpg") center/cover no-repeat;
+   
+    width: 100%;
+    height: 100%;
     display: flex;
-    overflow: hidden;
-}
-
-.blog-header h1 {
     align-items: center;
     justify-content: center;
-    align-content: center;
-    font-size: 2rem;
+}
+
+.blog-header {
+    text-align: center;
     color: white;
+    padding: 1rem;
+
+}
+
+
+
+.blog-header h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    
 }
 
 .blog-header p {
-    align-items: center;
-    justify-content: center;
-    align-content: center;
     font-size: 1rem;
     color: white;
+    
 }
 
 .blogimage img {
     height: 100%;
     width: 100%;
-    object-fit: cover;
+    
 
 }
+
+.blog-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    
+}
+
+.blog-card {
+    overflow: hidden;
+    
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0,1);
+    transition: transform 0.2s ease;
+}
+
+.blog-image {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+}
+
+.blog-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.blog-card h2 {
+    font-size: 2rem;
+    color:#b0d500;
+    margin-bottom: 0.5rem;
+    
+}
+
+.blog-card:hover {
+    transform: translateY(-5px);
+}
+
+
+
+/****************Blog Articles**************/
+
+
+
+.article-header {
+    display: flex;
+    height: 50dvh;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    text-align: center;
+   
+}
+
+.article-overlay {
+    background: 
+    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)),
+    url("Images/Ginger Stickers.png") center/cover no-repeat;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+
+.topic h1 {
+    font-size: 3rem;
+    color: white;
+    margin-bottom: 1rem;
+    }
+    
+.topic p {
+    font-size: 1.5rem;
+    color: white;
+        
+    }
+    
+.blogimage img {
+    height: 100%;
+    width: 100%;
+        
+    
+    }
+.article-content {
+    margin: 4rem;
+    max-width: 1300px;
+    text-align: left;
+}
+
+    .article-content h2 {
+        font-size: 3rem;
+        color:#b0d500;
+        margin-bottom: 1rem;
+    }
+
+.article-content h3, h4, h5, h6 {
+    font-size: 2rem;
+    color:#b0d500;
+    margin-bottom: 1rem;
+
+}
+    
+
+
 
 /*home portfolio section*/
 

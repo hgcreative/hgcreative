@@ -907,6 +907,42 @@ body {
     margin-bottom: 1rem;
 
 }
+
+.blog-cta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    flex-direction: column;
+    height: 50dvh;
+    background-color: #f6f8ed;
+}
+
+.blog-cta h1 {
+    font-size: 2rem;
+    color:#b0d500;
+    margin-bottom: 1rem;
+}
+
+.blog-cta p {
+    font-size: 1rem;
+    color:#555;
+}
+
+.blog-btn {
+    width: 200px;
+    color:#555;
+    background-color:#c1e029;
+    border-radius: 30px;
+    border: none;
+    height: 50px;
+}
+
+.blog-btn:hover {
+    background-color: #deeba2;
+
+}
     
 
 

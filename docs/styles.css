@@ -961,6 +961,40 @@ body {
     background-color: #deeba2;
 
 }
+
+.church-cta {
+    color:#ffffff;
+    background-color: #b0d500;
+    width: 150px;
+    height: 40px;
+    border-radius: 30px;
+    border: none;
+}
+
+.church-cta:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+figure {
+    margin: 2rem;
+    text-align: left;
+    max-width: 1000px;
+}
+
+figure img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+  
+}
+
+figcaption {
+    font-size: 1rem;
+    color:#8e8e8e;
+    margin-top: 0.5rem;
+
+}
     
 
 

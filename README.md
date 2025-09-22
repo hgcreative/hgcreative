@@ -1,8 +1,7 @@
-## Hi there 👋
+## Hello World
 
-I'm currently working on my own website for my brand design business with my portfolio and simple static pages.
-I'm relearning html and css after not practicing since my web design capstone in college four years ago.
-ask me about brand design for your business! :) 
+I'm a brand designer who is constantly yelling at myself for my mistakes during my web dev journey.
+I design well. I develop okay.
 
 <!--
 **hgcreative/hgcreative** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.

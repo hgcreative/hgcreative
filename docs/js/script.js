@@ -23,27 +23,7 @@ function myFunction() {
     }
 }
 
-window.addEventListener("scroll", function () {
-    const nav = document.querySelector(".topnav");
-    nav.classList.toggle("scrolled", window.scrollY > 10);
-});
 
-window.onload = function () {
-const words = ["Brand Design", "Web Design", "Photography", "Marketing"];
-let index = 0;
-
-setInterval(() => {
-    const wordElement = document.getElementById("word-swap");
-    wordElement.style.opacity = 0; // fade out
-
-    setTimeout(() => {
-        index = (index + 1) % words.length;
-        wordElement.textContent = words[index];
-        wordElement.style.opacity = 1;
-    
-    }, 400); //time matches css transition
-}, 3000); //rotate every 3 seconds
-};
 
 window.addEventListener('scroll', function () {
 const image = document.querySelector('.parallax-image');
@@ -68,3 +48,15 @@ window.addEventListener('scroll', function () {
             content.classList.toggle('open');
         });
     });
+
+
+    
+    // ScrollTrigger Plugin
+    
+    gsap.registerPlugin(ScrollTrigger);
+
+
+
+ 
+
+

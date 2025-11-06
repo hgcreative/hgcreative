@@ -140,7 +140,7 @@ body {
 
 .hero-section {
    position: relative;
-   height: 100vh;
+   height: 90vh;
    background-position: center;
    display: flex;
    align-items: center;
@@ -328,12 +328,12 @@ body {
 
 .about-section {
     display: flex;
-    align-items: center;
-    align-items: center;
-    padding: 1rem;
+    align-items: flex-start;
     justify-content: center;
-    margin-top: 60px;
-    height: 100vh;
+    min-height: 50dvh;
+    padding: 1rem;
+    height: 60vh;
+    
     
 
 }
@@ -490,56 +490,12 @@ body {
 
 /* Continued Homepage CTA*/
 
-.image-divide {
-    position: relative;
-    height: 50dvh;
-    background-image: url(Images/Ginger/Ginger\ Pattern.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    text-align: center;
-    overflow: hidden;
-    color: white;
-    margin-top: 3rem;
-}
-
-@media (max-width: 768px) {
-    .image-divide {
-        background-attachment: scroll;
-    }
-}
-
-.image-divide .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: rgba(0, 0, 0, 0.3);
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    object-fit: contain;
-    z-index: 1;
-  
-}
-
-.image-divide .content {
-    position: relative;
-    z-index: 2;
-}
-
 .cta-home-section {
     display: flex;
     align-items: center;
     justify-content: center;
     align-content: center;
-    gap: 40px;
-    
-    height: 100vh;
+    height: 50vh;
     background:#fcfef4;
     
 }
@@ -558,7 +514,7 @@ body {
     align-content: center;
     color:#555;
     font-size: 1rem;
-    margin-top: -1rem;
+    
 
 }
 
@@ -613,8 +569,8 @@ body {
 
 .heather-section {
     display: block;
-    padding-bottom: 2rem;
-    height: 100vh;
+    min-height: 50vh;
+    padding: 3rem 2rem;
    
     
     
@@ -627,7 +583,7 @@ body {
     justify-content: center;
     
     width: 100%;
-    margin-top: -4rem;
+    
     
 }
 
@@ -643,7 +599,6 @@ body {
     text-align: center;
     justify-content: center;
     margin-top: -5rem;
-    margin-bottom: -5rem;
     z-index: 1;
     display: flex;
     
@@ -4101,85 +4056,42 @@ margin: 2rem;
     border-radius: 10px;
 }
 
-
-.footer-logo {
-    max-width: 100px;
-    height: auto;
-    margin: 2rem;
-    
+.site-footer {
+    display: flex;
+    background-color: #e7ecd0;
+    padding: 2rem;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 2rem;
 }
 
 .footer-logo img {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    object-fit: contain;
-}
-
-.footer-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
-    gap: 60px;
-    text-align: left;
-    height: 20vh;
-}
-
-.site-footer {
-    background-color: #e7ecd0;
-    text-align: center;
-    padding: 40px 20px;
-    color: #333;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.site-footer h4 {
-    margin-bottom: 10px;
-    font-size: 1rem;
-
-}
-
-.site-footer ul {
-    margin: 5px 0;
-    list-style: none;
-
-}
-
-.site-footer li {
-    margin: 5px 0;
-}
-
-.site-footer a {
-    color: #333;
-    text-decoration: none;
-}
-
-.site-footer a:hover {
-    text-decoration: underline;
+    max-width: 50px;
+    height: auto;
 }
 
 .footer-note {
-    font-size: 0.8rem;
-    color: #333;
-
+    font-size: 0.9rem;
+    color: #555;
 }
 
-.footer-hg {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    flex-direction: column;
+
+
+@media (max-width:768px) {
+    .site-footer {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 90%;
+        margin: 0 auto;
+    
+        
+    }
+
+
+    .footer-note {
+        font-size: 1rem;
+    }
 }
 
-.footer-content {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 60px;
-    margin-bottom: 20px;
-}

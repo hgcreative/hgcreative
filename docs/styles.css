@@ -154,7 +154,6 @@ color:#f8b25d;
    height: 100dvh;
    margin: 0;
    background-color: #b0d500;
-   background-size: 200%;
    background-image: linear-gradient(135deg,
    rgba(255, 255, 255, 0.2) 0%,
    rgba(255, 255, 255, 0.8) 50%,
@@ -244,7 +243,7 @@ color:#f8b25d;
 }
 
 .svg-btn {
-    display: inline-block;
+    display: block;
     width: 75px;
     height: auto;
     cursor: pointer;

@@ -50,6 +50,21 @@ window.addEventListener('scroll', function () {
     });
 
 
+    const audio = document.getElementById('hero-audio');
+    const toggle = document.getElementById('music-toggle');
+
+    toggle.addEventListener('click', () => {
+        if (audio.paused) {
+            audio.play();
+            toggle.classList.add('active');
+            
+        } else {
+            audio.pause();
+            toggle.classList.remove('active')
+        }
+    })
+
+
     
     // ScrollTrigger Plugin
     

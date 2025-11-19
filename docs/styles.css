@@ -256,6 +256,49 @@ color:#f8b25d;
     transform: scale(1.1);
 }
 
+.music-toggle {
+    width: 60px;
+    height: 30px;
+    position: absolute;
+    top: -40px;
+    right: 30px;
+    cursor: pointer;
+    border-radius: 30px;
+    background-color: #a3a2a2;
+    z-index: 10;
+    box-shadow: 0 0 8px rgba(186, 255, 10, 0.6);
+    
+}
+
+.toggle-track {
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+}
+
+.toggle-circle {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    transition: transform 0.3s;
+}
+
+
+.music-toggle.active {
+    background-color: #e80093;
+ 
+}
+
+.music-toggle.active .toggle-circle {
+    transform: translateX(30px);
+}
+
+
 @keyframes jiggle {
     0% { transform: rotate(0deg); }
     20% { transform: rotate(-2deg); }

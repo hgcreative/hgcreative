@@ -8,9 +8,8 @@ heroImage.style.transform = `translateY(${-scrollY * speed}px)`;
 
 });
 
-function toggleMenu() {
-    const nav = document.getElementById("myTopnav");
-    nav.classList.toggle("responsive");
+function toggleNav() {
+    document.querySelector(".topnav").classList.toggle("responsive");
 }
 
 

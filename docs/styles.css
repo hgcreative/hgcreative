@@ -1303,30 +1303,21 @@ figcaption {
 .work-intro {
     display: flex;
     flex-direction: column;
-   
-    align-items: center;
+    align-items: left;
     height: 35dvh;
-    background-color:#fff9f0;
-    justify-content: center;
-    align-content: center;
-    text-align: center;
+    background-color:#fff;
    
 }
 
 .work-intro h1 {
-    color: #716f6f;
-    font-size: clamp(42px, calc(5vw + 2rem), 4rem);
+    color: #b0d500;
+    font-size: 5rem;
     font-family: Arial, Helvetica, sans-serif;
-    margin-bottom: 1rem;
-    text-align: center;
+    text-align: left;
+    margin-left: 5rem;
 }
 
-p {
-    color: #4c4c4c;
-    font-size: 1rem;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-top: 0;
-}
+
 
 .button-group {
     display: flex;

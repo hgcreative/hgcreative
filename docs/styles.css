@@ -1616,6 +1616,79 @@ figcaption {
                     Project Pages
 *******************************************************/
 
+/*********************** OVC WEB DESIGN ************************/
+
+.webdesign-hero {
+    width: 100%;
+    height: 70dvh;
+    background-image: url("Images/OVC/OVCWebsite.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.ovc-study {
+    font-family: Arial, Helvetica, sans-serif;
+    color:#1c355e;
+    padding: 5rem;
+    align-items: center;
+    text-align:  left;
+
+
+}
+
+.ovc-link {
+    color:#e80093;
+    cursor:pointer;
+}
+
+.scroll-section {
+    display: grid;
+    grid-template-columns: minmax(300px, 40%) 1fr;
+    align-items: start;
+    gap: 3rem;
+    padding: 2rem;
+}
+
+.text-column {
+    position: sticky;
+    top: 2rem;
+    align-self: start;
+    font-family: Arial, Helvetica, sans-serif;
+    color:#1c355e;
+    margin-left: 4rem;
+    max-height: calc(100vh - 4rem);
+   
+   
+    
+}
+
+.image-column {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    
+}
+
+.image-block {
+    position: relative;
+}
+
+.image-block::before {
+    content: "";
+    position: absolute;
+    inset: -12px;
+    background: #f3f3f3;
+    border-radius: 20px;
+    z-index: -1;
+}
+
+.image-block img {
+    width: 100%;
+    height: auto;
+    
+    display: block;
+}
 
 /*OVC Page*/
 

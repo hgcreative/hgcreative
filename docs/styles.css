@@ -1007,7 +1007,7 @@ figcaption {
 /* about page*/
 
 .about-portrait {
-    width: 200px;
+    width: 300px;
     height: auto;
     border-radius: 300px;
 }
@@ -1028,12 +1028,14 @@ figcaption {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 3rem;
     color:#b0d500;
+    margin-bottom: -1rem;
 }
 
 .about-home p {
     font-family:Arial, Helvetica, sans-serif;
     color:#4c4c4c;
     font-size: 1rem;
+    
 }
 
 

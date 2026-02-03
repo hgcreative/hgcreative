@@ -1009,18 +1009,26 @@ figcaption {
 .about-portrait {
     width: 300px;
     height: auto;
-    border-radius: 300px;
+    border-radius: 35px;
+}
+
+.about-intro {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    padding: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 
 
 .about-home {
    display: flex;
-   align-items: center;
    flex-direction: column;
    justify-content: center;
-   gap: 20px;
-   padding: 2rem;
+   gap: 1rem;
+ 
    
 }
 
@@ -1028,7 +1036,7 @@ figcaption {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 3rem;
     color:#b0d500;
-    margin-bottom: -1rem;
+    margin: 0;
 }
 
 .about-home p {
@@ -1047,12 +1055,14 @@ figcaption {
    
 }
 
-.portrait {
-    width: 75px;
-    border-radius: 50%;
-    align-content: center;
-    
+@media (max-width: 768px) {
+    .about-intro {
+        flex-direction: column;
+        text-align: left;
+    }
 }
+
+
 
 .about-quote {
     height: 75dvh;
@@ -1098,6 +1108,7 @@ figcaption {
     position: relative;
     color: white;
     text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
     
 }
 

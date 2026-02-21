@@ -191,8 +191,19 @@ color:#b0d500;
 body {
    
     background-color: white;
+    
        
 }
+
+input,
+textarea,
+button,
+select,
+[contenteditable="true"] {
+    cursor: auto;
+}
+
+
 
 .image-bg {
     background-image: url("Images/Checkered\ Background.jpg");

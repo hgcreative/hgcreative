@@ -68,9 +68,3 @@ window.addEventListener('scroll', function () {
     // ScrollTrigger Plugin
     
     gsap.registerPlugin(ScrollTrigger);
-
-
-
- 
-
-

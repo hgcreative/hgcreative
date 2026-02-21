@@ -207,7 +207,7 @@ body {
 
 .hero-section {
 
-   height: 100dvh;
+   height: 75dvh;
    margin: 0;
    padding: 0;
    justify-content: center;
@@ -990,7 +990,7 @@ figcaption {
     max-width: 1000px;
     margin: 0 auto;
     height: 75dvh;
-    background-color: #f8f8f8;
+    background-color: #fefbfb;
     border: solid #b0d500;
     border-radius: 35px;
 }
@@ -1274,17 +1274,20 @@ figcaption {
 .poster-grid {
     display: flex;
     justify-content: center;
+   
+    gap: 0.5rem;
   
 
 }
 
 .poster {
-    width: 300px;
-    height: 600p;
+    width: 250px;
+    height: 300px;
     position: relative;
-    margin-left: -120px;
+    border: 5px dotted #fbce98;
+    
     overflow: hidden;
-    border-radius: 10px;
+    border-radius: 20px;
     transition: transform 0.3s ease;
     cursor: pointer;
 }
@@ -1296,6 +1299,10 @@ figcaption {
     display: block;
     transition: transform 0.3s ease;
 }
+
+.poster1 { transform: translateY(-20%); }
+.poster3 { transform: translateY(-20%); }
+.poster5 { transform: translateY(-20%); }
 
 .overlay {
     position: absolute;
@@ -1324,12 +1331,6 @@ figcaption {
     opacity: 1;
 }
 
-.poster1 { transform: rotate(-15deg) translate(15px); }
-.poster2 { transform: rotate(-10deg) translate(10px); }
-.poster3 { transform: rotate(-5deg) translate(5px); }
-.poster4 { transform: rotate(5deg) translate(5px); }
-.poster5 { transform: rotate(10deg) translate(10px); }
-.poster6 { transform: rotate(15deg) translate(15px); }
 
 
 .overlay h2 {

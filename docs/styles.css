@@ -379,14 +379,15 @@ select,
         margin-right: 0;
         margin-top:0;
         margin-bottom: 0;
-        height: 100dvh;
+        height: 75dvh;
         
     }
 
     .hero-box {
-        width: 90%;
+        width: 80%;
         padding: 1.5rem;
         border-radius: 20px;
+        max-width: 80%;
     }
 
     .hero-content h1 {
@@ -415,7 +416,9 @@ select,
         gap: 15px;
     }
 
-   
+
+
+ 
 }
 
 
@@ -1370,18 +1373,18 @@ figcaption {
         margin-left: 0;
         transform:scale(1.1);
         width: 100%;
-        height: auto;
+        height: 150px;
     }
 }
 
 @media (max-width: 700px) {
     .poster-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
 
     .poster {
-        width: 200px;
-        height: 300px;
+        width: 150px;
+        height: 200px;
     }
 }
 

@@ -887,12 +887,14 @@ figcaption {
 
 .package-list {
     flex: 1;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .package-list p {
     font-weight:bold;
     color:#383f40;
     margin-top: 3rem;
+    font-family: Arial, Helvetica, sans-serif;
     
 }
 

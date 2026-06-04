@@ -24,11 +24,7 @@ function myFunction() {
 
 
 
-window.addEventListener('scroll', function () {
-const image = document.querySelector('.parallax-image');
-const scrollTop = window.pageYOffset;
-image.style.transform = `translateY(${scrollTop * 0.5}px)`;
-});
+
 
 window.addEventListener('scroll', function () {
     const image = document.querySelector('.about-quote-image img');

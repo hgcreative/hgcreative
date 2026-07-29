@@ -420,6 +420,269 @@ select,
 
  
 }
+/*****************Photography Page*********************/
+.photo-top {
+    display: flex;
+    height: 35dvh;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 35px;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    background-color: white;
+    flex-direction: column;
+    opacity: 70%;
+   
+}
+.photo-top h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ff991f;
+   
+    
+}
+
+.photo-top p {
+    font-size: 1rem;
+    color: #f8b25d;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 300px);
+    gap: 15px;
+   
+}
+
+.photo-grid a {
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+.photo-grid img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 35px;
+}
+
+.photo-hero {
+    grid-column: span 1;
+}
+
+.family-portraits {
+    grid-column: span 2;
+}
+
+.senior-photos {
+    grid-column: span 1;
+    grid-row: span 2;
+   
+}
+
+.travel-photography {
+    grid-column: span 1;
+}
+
+.event-photography {
+    grid-column: span 1;
+}
+
+.other-photo {
+    grid-column: span 1;
+}
+
+.book-btn {
+    grid-column: span 1;
+    background: #c1e029;
+    display: grid;
+    place-items: center;
+    font-size: 2rem;
+    text-decoration: none;
+    border-radius: 35px;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: flex-end;
+    padding: 24px;
+    background: linear-gradient(
+        to top,
+        rgba(0,0,0,.55),
+        rgba(100,50,255,.15)
+    );
+}
+
+.photo-grid a:hover .overlay {
+    opacity: 1;
+}
+
+.overlay h2 {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.overlay h1 {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .photo-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 20px;
+    }
+
+    .photo-grid > * {
+        grid-column: 1 / -1;
+    }
+
+    .photo-grid img {
+        height: 400px;
+    }
+
+    .book-btn {
+        height: 100px;
+    }
+}
+
+
+
+/* ------------Photo Genre Pages---------------- */
+
+.family-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 25px;
+       
+    
+}
+
+.family-photos {
+   columns: 3;
+   column-gap: 10px;
+   max-width: 1400px;
+   align-items: center;
+   
+}
+
+.family-photos img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    max-width: 500px;
+    margin-bottom: 10px;
+    break-inside: avoid;
+    border-radius: 10px;
+}
+
+
+
+.familyphoto-intro {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    padding: 1rem;
+    
+    margin: 2rem;
+    height: 50dvh;
+    background-color: #fefff9;
+    border: solid #b0d500;
+    border-radius: 35px;
+   
+
+}
+
+.family-text {
+   flex: 1;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   margin-top: 2rem;
+   line-height: 1;
+   margin-left: 2rem;
+}
+
+.family-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 2rem;
+    
+}
+
+.family-image img {
+    display: block;
+    width: 100%;
+    height: 400px;
+    max-width: 700px;
+    border-radius: 25px;
+    object-fit: cover;
+}
+
+.family-text h1 {
+    color: #909090;
+    margin: 0 0 1rem;
+    font-size: 4rem;
+    font-family: Arial, Helvetica, sans-serif;
+   
+
+}
+
+.family-text p {
+    color:#8e8e8e;
+    font-size: 1rem;
+    max-width: 400px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media (max-width: 768px) {
+    .familyphoto-intro {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .family-image {
+        width: 90%;
+    
+    }
+
+    .family-text h1 {
+        font-size: 3rem;
+       
+    }
+
+    .family-text p {
+        margin-top: 0;
+    }
+
+    .family-photos {
+        columns: 2;
+    }
+}
+
+@media (max-width: 900px) {
+    .family-text h1 {
+        font-size: 2rem;
+    }
+}
 
 
 /*******************Blog Home Page********************/
@@ -739,6 +1002,9 @@ figcaption {
 .parallax-text p {
     color:#ebeaea;
     font-size: 1.15rem;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
   
 }
 .hgdesign-number-package {
@@ -977,23 +1243,27 @@ figcaption {
     text-align: left;
 }
 
-.package.cta {
+
+
+.package-cta-header {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
    
-}
-
-.package-cta-header {
     position: relative;
     color: white;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 2rem;
-    color:#716f6f;
+    color:#e80093;
+    border: 2px solid #b0d500;
+    background-color: white;
     
     margin: 3rem;
+    padding: 2rem;
+    border-radius: 35px;
+    max-width: 600px;
     
 }
 

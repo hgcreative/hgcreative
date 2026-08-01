@@ -430,7 +430,7 @@ select,
     overflow: hidden;
     border-radius: 35px;
     margin-top: 2rem;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
     background-color: white;
     flex-direction: column;
     opacity: 70%;
@@ -455,7 +455,7 @@ select,
 .photo-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, 300px);
+    grid-template-rows: repeat(3, 300px);
     gap: 15px;
    
 }
@@ -556,6 +556,60 @@ select,
 
     .book-btn {
         height: 100px;
+    }
+}
+
+
+
+
+.photo-packages {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    padding: 3rem;
+    margin: 2rem;
+    height: 50dvh;
+    background-color: #fefbfb;
+    border-radius: 35px;
+    box-shadow:
+    0 0 20px #deeba2,
+    0 0 40px rgba(238, 203, 249, 0.5);
+}
+
+
+
+.photo-packages-home {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   gap: 1rem;
+ 
+   
+}
+
+.photo-packages-intro h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+    color:#b0d500;
+    margin: 0;
+}
+
+.photo-packages-intro p {
+    font-family:Arial, Helvetica, sans-serif;
+    color:#4c4c4c;
+    font-size: 1rem;
+    
+}
+
+@media (max-width: 768px) {
+    .photo-packages {
+        gap: 1rem;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .photo-packages-intro h2 {
+        text-align: center;
     }
 }
 

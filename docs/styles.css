@@ -596,8 +596,8 @@ select,
 
 .photo-packages-intro p {
     font-family:Arial, Helvetica, sans-serif;
-    color:#4c4c4c;
-    font-size: 1rem;
+    color:#8e8e8e;
+    font-size: 1.5rem;
     
 }
 
@@ -612,6 +612,95 @@ select,
         text-align: center;
     }
 }
+
+
+.session-card {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background: white;
+    padding: 1rem;
+    border-radius: 35px;
+
+    box-shadow:
+    0 0 20px #fbce98,
+    0 0 40px rgba(238, 203, 249, 0.5);
+
+    margin: 2rem;
+}
+
+.session-image {
+    flex: 1;
+}
+
+.session-image img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.session-info {
+    flex: 1;
+}
+
+.session-info h2 {
+    font-size: 2rem;
+    color:#f8b25d;
+    letter-spacing: 0.12em;
+    margin: 1rem;
+}
+
+.session-info p {
+    line-height: 1.5;
+    font-size: 1rem;
+    color:#555;
+    margin: 1rem;
+}
+
+.session-info h3 {
+    font-size: 1rem;
+    color:#979797;
+    margin: 1rem;
+}
+
+.session-info h2,
+.session-info p,
+.session-info h3 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.session-btn {
+    display: inline-block;
+    margin: 30px;
+    padding: 30px;
+    border-radius: 50px;
+    background-color: #f8b25d;
+    color: white;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.senior-btn {
+    display: inline-block;
+    margin: 30px;
+    padding: 30px;
+    border-radius: 50px;
+    background-color: #5f62f7;
+    color: white;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+@media (max-width: 768px) {
+    .session-card {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+
 
 
 

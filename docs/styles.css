@@ -934,6 +934,134 @@ select,
     }
 }
 
+/*Brand Blog Page DIY*/
+
+.brand-shouting {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    color: #e80093;
+    
+}
+
+.article-header-photos {
+   
+    height: 20dvh;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    margin: 0 auto;
+    margin-top: 2rem;
+   
+
+    display: flex;
+
+    padding: 1.5rem 2rem;
+
+    background: #f86ac4;
+    border: 3px solid #e80093;
+    border-radius: 17px 40px 32px 18px;
+
+    max-width: 650px;
+
+    transform: rotate(-2deg);
+
+    box-shadow: 12px 6px 0 #f6cee7;
+   
+}
+
+
+.blog-topic h1 {
+    color:#e80093;
+
+}
+
+.float-image {
+    grid-column: 2;
+    width: 45%;
+    margin-bottom: 1rem;
+}
+
+.float-image.left {
+    float: left;
+    margin-right: 2rem;
+}
+
+.float-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.float-image.right {
+    float: right;
+    margin-left: 2rem;
+}
+
+@media (max-width: 768px) {
+    .float-image {
+        width: 100%;
+        float: none !important;
+        margin-right: 0;
+    }
+    .gallery-row {
+       grid-template-columns: 1fr;
+       
+     
+    }
+
+    .gallery-item img {
+        height: auto;
+        object-fit: contain;
+    
+    }
+}
+
+.gallery-row {
+    grid-column: 2 / span 3;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin: 2rem 0;
+    width: 100%;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    display: block;
+}
+
+.caption {
+    color:#fab056;
+}
+
+.blog-cta h3 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color:#383f40;
+    font-size: 3rem;
+    margin-bottom: 0;
+}
+
+
+@media (max-width: 768px) {
+    
+    .gallery-row {
+       grid-template-columns: 1fr;
+       
+     
+    }
+
+    .gallery-item img {
+        height: auto;
+        object-fit: contain;
+    
+    }
+}
+
 
 
 /*Brand Photo Page*/
@@ -1309,7 +1437,7 @@ select,
     }
 
 .article-content {
-    margin: 6rem;
+    margin: 8rem;
     max-width: 1300px;
     text-align: left;
     font-family: Arial, Helvetica, sans-serif;
@@ -1317,10 +1445,10 @@ select,
 }
 
     .article-content h2 {
-        font-size: 2rem;
+        font-size: 3rem;
         color:#b0d500;
         margin-bottom: 1rem;
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     }
 
 .article-content h3, h4, h5, h6 {
